@@ -90,12 +90,13 @@
 		6EBF7A10D2F1769806C8C5BEDEE63A7A /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC00030E82666A274CA19DC3897C4E9 /* ConstraintLayoutSupportDSL.swift */; };
 		6F1EE2EB8F9ECE120CDFADEEB62F9BAD /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDED351203D91DB3C5560BB3AE69F24 /* ConstraintMakerFinalizable.swift */; };
 		7245A71549EB2DE1C320C88CD14B7C56 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD34EFAA81A24D943F2EF7BDA95DEE /* String+MD5.swift */; };
-		76E422D99A98953D6404C931A88CF456 /* JKProgressHUD+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CB0C472451AF559C9B7E3B1065956D /* JKProgressHUD+UIView.swift */; };
 		79F64F45339ED6726FA783A44B8D1706 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B129BD8CA4999750B06DEA78F84D6CA0 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AAF15AB88CB3CCC8FBE1C8A6D1DDA6A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720102E0B000425CAA32516AB93D9536 /* Resource.swift */; };
 		7CD084C4C902F18A210E442850B0F85B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B5C83BB74F2D212C62387BE322AFD /* ImageProcessor.swift */; };
 		80F2027BF0085AB74FE34C4BAB58B9D2 /* JKEmitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D70876177AD9350FA8605E9FBD3FC /* JKEmitterable.swift */; };
-		841B468625C3B58800326D5C /* JKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 841B468525C3B58800326D5C /* JKProgressHUD.h */; };
+		841B469C25C3C89000326D5C /* JKProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B469925C3C89000326D5C /* JKProgressHUD.swift */; };
+		841B469D25C3C89000326D5C /* JKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 841B469A25C3C89000326D5C /* JKProgressHUD.h */; };
+		841B469E25C3C89000326D5C /* JKProgressHUD+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B469B25C3C89000326D5C /* JKProgressHUD+UIView.swift */; };
 		85E10ED2FEFAB5129017B29AC9696794 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBF0570C6654121955B4ABB41C056D3 /* QuartzCore.framework */; };
 		87A3F3C93658D92F5999D8B59B4831C4 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20623A6C561296689CEF9DA65C90FB42 /* MBProgressHUD.framework */; };
 		88BC04108C85C2265A5DEEFC262D46A4 /* MaskingManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911801D23DA0C5162F4012F1DC02010 /* MaskingManager+Extension.swift */; };
@@ -146,7 +147,6 @@
 		CA99E6D93E7FB31138D96895902D1D98 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E9D1DCCC765E4340BA6888D88E1FE /* Filter.swift */; };
 		CD883F2EBBAA06D271C7A97A1472050D /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0912E5AF826F1D8C4B5CDE6B90D872D1 /* LayoutConstraintItem.swift */; };
 		CF284120800EBAC72F25EF5D088B0D92 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A3217307AD3DD931249CD6DAD8C943 /* UILabel+Extension.swift */; };
-		CFF2DD3461E9B518B5C06BA45192B2E7 /* JKProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842A918288D7ECF01FF08F1C6E237D6E /* JKProgressHUD.swift */; };
 		D1D045B946550D9A71F57ABE5456BC12 /* JKPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D413AB4335CCF99E27113F5247005F29 /* JKPrint.swift */; };
 		D3DF5F7679CB6B6ADB7C28F5E1694BA0 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0D68A794A9F619E05B328DE2F4558A /* ConstraintDescription.swift */; };
 		D56FC026EA000907FEB1778F4031712D /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1F8A339F4954EEAD007DD5F5634C4 /* LayoutConstraint.swift */; };
@@ -373,8 +373,9 @@
 		7CBD3081B36C56F9589CAA80B953E07D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
 		7FDED351203D91DB3C5560BB3AE69F24 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		8210F1C4F521ACC6718094FAEEEEB532 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Bundle+Extension.swift"; sourceTree = "<group>"; };
-		841B468525C3B58800326D5C /* JKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKProgressHUD.h; path = JKProgressHUD/Classes/JKProgressHUD.h; sourceTree = "<group>"; };
-		842A918288D7ECF01FF08F1C6E237D6E /* JKProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKProgressHUD.swift; path = JKProgressHUD/Classes/JKProgressHUD.swift; sourceTree = "<group>"; };
+		841B469925C3C89000326D5C /* JKProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JKProgressHUD.swift; path = JKProgressHUD/Classes/JKProgressHUD/JKProgressHUD.swift; sourceTree = "<group>"; };
+		841B469A25C3C89000326D5C /* JKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKProgressHUD.h; path = JKProgressHUD/Classes/JKProgressHUD/JKProgressHUD.h; sourceTree = "<group>"; };
+		841B469B25C3C89000326D5C /* JKProgressHUD+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JKProgressHUD+UIView.swift"; path = "JKProgressHUD/Classes/JKProgressHUD/JKProgressHUD+UIView.swift"; sourceTree = "<group>"; };
 		84BFC2E9FAA7A9F804AD863557E4E72C /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		85E094AD31191681D64AC1687E226EDC /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/Protocol/NibLoadable.swift; sourceTree = "<group>"; };
 		86F4BA8FF1BC2602D0D74260071CF4AC /* JKGlobalTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKGlobalTools.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKGlobalTools.swift; sourceTree = "<group>"; };
@@ -437,7 +438,6 @@
 		C9AD7470CB2384F51EC5E3A100A81338 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateFormatter+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		C9CD41BFACB4B3AB82E5A6262EF17E36 /* Pods-JKProgressHUD_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKProgressHUD_Example-Info.plist"; sourceTree = "<group>"; };
 		D1379478CC98726122623A95EBC9D2F2 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		D2CB0C472451AF559C9B7E3B1065956D /* JKProgressHUD+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JKProgressHUD+UIView.swift"; path = "JKProgressHUD/Classes/JKProgressHUD+UIView.swift"; sourceTree = "<group>"; };
 		D413AB4335CCF99E27113F5247005F29 /* JKPrint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKPrint.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKPrint.swift; sourceTree = "<group>"; };
 		D5FAABD6BF6ABFFE6527C9216FE56078 /* UITextField+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UITextField+Extension.swift"; sourceTree = "<group>"; };
 		D665AD65A303F779AFE20B08FC7DFBE0 /* JKClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKClosure.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKClosure.swift; sourceTree = "<group>"; };
@@ -898,9 +898,9 @@
 		CB75C41EB408CBD651A5F49690CA9A56 /* JKProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				841B468525C3B58800326D5C /* JKProgressHUD.h */,
-				842A918288D7ECF01FF08F1C6E237D6E /* JKProgressHUD.swift */,
-				D2CB0C472451AF559C9B7E3B1065956D /* JKProgressHUD+UIView.swift */,
+				841B469A25C3C89000326D5C /* JKProgressHUD.h */,
+				841B469925C3C89000326D5C /* JKProgressHUD.swift */,
+				841B469B25C3C89000326D5C /* JKProgressHUD+UIView.swift */,
 				EE0E2FBE6BA4AEB1D65A6D76BF620AD8 /* Pod */,
 				EC85F37A4EA968D3551CBBCCD79CCC08 /* Support Files */,
 			);
@@ -976,7 +976,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				841B468625C3B58800326D5C /* JKProgressHUD.h in Headers */,
+				841B469D25C3C89000326D5C /* JKProgressHUD.h in Headers */,
 				6977D5B5E6A8BF0F6BCBA7ED17F5BD6C /* JKProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1171,6 +1171,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					DA0D387D9C035FFE6124AC2B118FE7B8 = {
+						LastSwiftMigration = 1230;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1459,9 +1464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E422D99A98953D6404C931A88CF456 /* JKProgressHUD+UIView.swift in Sources */,
+				841B469E25C3C89000326D5C /* JKProgressHUD+UIView.swift in Sources */,
 				61A2986B49A52829A47A7EB2381024CA /* JKProgressHUD-dummy.m in Sources */,
-				CFF2DD3461E9B518B5C06BA45192B2E7 /* JKProgressHUD.swift in Sources */,
+				841B469C25C3C89000326D5C /* JKProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1661,6 +1666,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2067FA32630C73C4FCA5E511AC40C5FC /* JKProgressHUD.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1787,6 +1793,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C11E82B4F2A386307D3F250C68DA24F /* JKProgressHUD.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1806,6 +1813,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
