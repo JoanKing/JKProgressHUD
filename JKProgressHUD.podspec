@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKProgressHUD'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'JKProgressHUD是对MBProgressHUD的扩展'
   s.description      = 'JKProgressHUD是一个针对扩展MBProgressHUD演示的一个使用用例'
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.requires_arc = true
 
-  s.source_files = 'JKProgressHUD/Classes/*'
+  s.source_files = 'JKProgressHUD/Classes/**/*'
   
   # s.resource_bundles = {
   #   'JKProgressHUD' => ['JKProgressHUD/Assets/*.png']

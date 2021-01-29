@@ -8,7 +8,6 @@
 #ifndef JKProgressHUD_h
 #define JKProgressHUD_h
 
-// @import MBProgressHUD;
-#import "MBProgressHUD.h"
+@import MBProgressHUD;
 
 #endif /* JKProgressHUD_h */
