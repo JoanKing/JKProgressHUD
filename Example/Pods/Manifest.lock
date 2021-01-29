@@ -1,0 +1,35 @@
+PODS:
+  - JKProgressHUD (0.1.0):
+    - MBProgressHUD
+  - JKSwiftExtension (1.1.2):
+    - Kingfisher
+    - SnapKit
+  - Kingfisher (4.10.1)
+  - MBProgressHUD (1.2.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - JKProgressHUD (from `../`)
+  - JKSwiftExtension
+
+SPEC REPOS:
+  trunk:
+    - JKSwiftExtension
+    - Kingfisher
+    - MBProgressHUD
+    - SnapKit
+
+EXTERNAL SOURCES:
+  JKProgressHUD:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKProgressHUD: af7554c92c9e9dce6cef2a9e6e48a167beaa0a7e
+  JKSwiftExtension: eb2b6202a98a8dffe77506789c22e0b28e57c217
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: 3c12d5acbef816963d1d6490641a03436a463c2d
+
+COCOAPODS: 1.10.0
