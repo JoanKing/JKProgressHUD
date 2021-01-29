@@ -95,6 +95,7 @@
 		7AAF15AB88CB3CCC8FBE1C8A6D1DDA6A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720102E0B000425CAA32516AB93D9536 /* Resource.swift */; };
 		7CD084C4C902F18A210E442850B0F85B /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B5C83BB74F2D212C62387BE322AFD /* ImageProcessor.swift */; };
 		80F2027BF0085AB74FE34C4BAB58B9D2 /* JKEmitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D70876177AD9350FA8605E9FBD3FC /* JKEmitterable.swift */; };
+		841B468625C3B58800326D5C /* JKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 841B468525C3B58800326D5C /* JKProgressHUD.h */; };
 		85E10ED2FEFAB5129017B29AC9696794 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DBF0570C6654121955B4ABB41C056D3 /* QuartzCore.framework */; };
 		87A3F3C93658D92F5999D8B59B4831C4 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20623A6C561296689CEF9DA65C90FB42 /* MBProgressHUD.framework */; };
 		88BC04108C85C2265A5DEEFC262D46A4 /* MaskingManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911801D23DA0C5162F4012F1DC02010 /* MaskingManager+Extension.swift */; };
@@ -273,7 +274,7 @@
 		128D4628B3709B15C386D439A4D301DB /* Pods-JKProgressHUD_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKProgressHUD_Example-dummy.m"; sourceTree = "<group>"; };
 		14524F2112C649CCBC6ECC4F532BC315 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		14614EEAA52E3B4F2EFCADA950D80D18 /* JKVerticalCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKVerticalCarousel.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKVerticalCarousel.swift; sourceTree = "<group>"; };
-		14ABF0326C2CC6F19622AFCEC4D8284C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		14ABF0326C2CC6F19622AFCEC4D8284C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		151A8761C3AA4E82679762C1B4E655B2 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/String+Extension.swift"; sourceTree = "<group>"; };
 		16648065575ED6B6B8DEA39FC52BDCCA /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		1856A537D0277919BAA7DA3A0E2951B8 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
@@ -288,7 +289,7 @@
 		2067FA32630C73C4FCA5E511AC40C5FC /* JKProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		20E1C737DDC2468D637A4CB21B638241 /* JKSwiftExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKSwiftExtension.modulemap; sourceTree = "<group>"; };
 		21F1F4E08B621255F3EC040FBFF110A1 /* JKValidateHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKValidateHelper.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKValidateHelper.swift; sourceTree = "<group>"; };
-		22EFCFAE2A2CE6D0338326CFB1F1DF8A /* JKSwiftExtension.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JKSwiftExtension.bundle; path = "JKSwiftExtension-JKSwiftExtension.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EFCFAE2A2CE6D0338326CFB1F1DF8A /* JKSwiftExtension.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKSwiftExtension.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2319C9BDC28E4D1C3DFF60F1723DAF0C /* NSIndexPath+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexPath+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/NSIndexPath+Extension.swift"; sourceTree = "<group>"; };
 		233F083800B7E384B4EA7A9591315631 /* JKSwiftExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKSwiftExtension.debug.xcconfig; sourceTree = "<group>"; };
 		2663BA39EA7EFB53A5B11BF0F87AFF92 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
@@ -319,7 +320,7 @@
 		40DE3C1187DFC7062848C28E50882E74 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		42775DAEE2166C9EDB32BBB414502C57 /* UIFont+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/UIFont+Extension.swift"; sourceTree = "<group>"; };
 		42AA4DBBBA8A02D62921BEF8D0BBE4E7 /* Pods-JKProgressHUD_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKProgressHUD_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		42E5FBFB4CD21FBA0C499D84A245ECB7 /* Pods_JKProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKProgressHUD_Example.framework; path = "Pods-JKProgressHUD_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E5FBFB4CD21FBA0C499D84A245ECB7 /* Pods_JKProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440D1D4DA4BCA788307944846711FAB2 /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
 		452A9CCB48E07CAB40A55AF9BE263604 /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
 		46F975E69911FE4A2375E5ACD2111519 /* Pods-JKProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -338,7 +339,7 @@
 		564736F036667D5F04939E62E9A4FD87 /* Pods-JKProgressHUD_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKProgressHUD_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		56D1CF5398527BB578BD01E95A7B598D /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		58DD06CF6D590F55A608021EC6C66967 /* Pods-JKProgressHUD_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKProgressHUD_Tests-dummy.m"; sourceTree = "<group>"; };
-		5D6C82CB437849B441C38A4DB6CB0720 /* JKProgressHUD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JKProgressHUD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5D6C82CB437849B441C38A4DB6CB0720 /* JKProgressHUD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JKProgressHUD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5D73AA0F51A3C50A0B436652C95ED622 /* Pods-JKProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5D75242E4524BC43D25DF699F6B56D3A /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		5EB435020AC90BB4645BE12F64F518E4 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
@@ -350,8 +351,8 @@
 		63A12FDF3B097F4580ABF3A69BFB2EB4 /* JKCommonTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKCommonTool.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/JKCommonTool.swift; sourceTree = "<group>"; };
 		63AD432F390EEA625FC4AAB0A8B57D38 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
 		66FB397882D86E09D490531C344EB5DB /* JKSwiftExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKSwiftExtension-Info.plist"; sourceTree = "<group>"; };
-		68877A42BD63BB778BB23FFC0031B17A /* JKSwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKSwiftExtension.framework; path = JKSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6909CF19C6B18D04A6D97DA902F51FE1 /* JKProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKProgressHUD.framework; path = JKProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68877A42BD63BB778BB23FFC0031B17A /* JKSwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKSwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6909CF19C6B18D04A6D97DA902F51FE1 /* JKProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9E45DE33F21AD124AF3DD666C956CA /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		6ACA341A6DD1DB0B580E0275EE7D1C82 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKWebView+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/WKWebView+Extension.swift"; sourceTree = "<group>"; };
 		6ACBD66D728A8EC5EE8E5AA711C62424 /* UserDefaults+Extesnion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UserDefaults+Extesnion.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/UserDefaults+Extesnion.swift"; sourceTree = "<group>"; };
@@ -372,6 +373,7 @@
 		7CBD3081B36C56F9589CAA80B953E07D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
 		7FDED351203D91DB3C5560BB3AE69F24 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		8210F1C4F521ACC6718094FAEEEEB532 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Bundle+Extension.swift"; sourceTree = "<group>"; };
+		841B468525C3B58800326D5C /* JKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKProgressHUD.h; path = JKProgressHUD/Classes/JKProgressHUD.h; sourceTree = "<group>"; };
 		842A918288D7ECF01FF08F1C6E237D6E /* JKProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKProgressHUD.swift; path = JKProgressHUD/Classes/JKProgressHUD.swift; sourceTree = "<group>"; };
 		84BFC2E9FAA7A9F804AD863557E4E72C /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		85E094AD31191681D64AC1687E226EDC /* NibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = JKSwiftExtension/Classes/JKSwiftExtesion/Protocol/NibLoadable.swift; sourceTree = "<group>"; };
@@ -379,7 +381,7 @@
 		882D4B5CEC400FB8BC85B6B233512E8E /* Pods-JKProgressHUD_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKProgressHUD_Tests.modulemap"; sourceTree = "<group>"; };
 		8892A8FCF89AE8DD844505B3C8BFCF13 /* JKPOP+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JKPOP+String.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/Protocol/JKPOPExtension/JKPOP+String.swift"; sourceTree = "<group>"; };
 		8911801D23DA0C5162F4012F1DC02010 /* MaskingManager+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MaskingManager+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/SmallTools/MaskingManager+Extension.swift"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D40A8CB289318A393E0C024301F2633 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Array+Extension.swift"; sourceTree = "<group>"; };
 		8DBF0570C6654121955B4ABB41C056D3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		913E051442CD5DF56DED75469BDFE88F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UIStackView+Extension.swift"; sourceTree = "<group>"; };
@@ -390,13 +392,13 @@
 		95A3217307AD3DD931249CD6DAD8C943 /* UILabel+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UILabel+Extension.swift"; sourceTree = "<group>"; };
 		95F0E13B4A771825B35542B29D7B71FA /* UIApplication+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		963E971E2F6B2BE2127DBE692260751B /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D6E9C53FAFF4CB26B9EF43965951F8 /* Double+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Double+Extension.swift"; sourceTree = "<group>"; };
 		9B84FC1E7E20707770B04B69B49BEA86 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9C11E82B4F2A386307D3F250C68DA24F /* JKProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		9D36122D7369D77B833081879ABCD8DC /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		9D3BCBB1B7C5479A183C432348A8621B /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1FD34EFAA81A24D943F2EF7BDA95DEE /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		A3D69B7F8E85AE0E879CCC06C9AD7AD6 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		A57B135788F8D0851C64852C399E34D0 /* UIPageControl+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageControl+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UIPageControl+Extension.swift"; sourceTree = "<group>"; };
@@ -408,7 +410,7 @@
 		ADE683C49713F20499CE51E5FF7B1B55 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
 		AE0A4952D3D8BFD40A67411FDB14C65B /* Character+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Character+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Character+Extension.swift"; sourceTree = "<group>"; };
 		AE422211905F8272965452D6B5B573CE /* UIViewController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/UIKitExtension/UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		AE85068357BB9A23E465EE00215A75EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AE85068357BB9A23E465EE00215A75EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AEBCB8879B86ECDB066F22D1723C17C3 /* Pods-JKProgressHUD_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKProgressHUD_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AF3430C8BF74A5A829E08C0FDCEA7ABD /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
 		B129BD8CA4999750B06DEA78F84D6CA0 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
@@ -428,7 +430,7 @@
 		C376B425A732DD1FCFF710051CB7160E /* NSNumber+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNumber+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/NSNumber+Extension.swift"; sourceTree = "<group>"; };
 		C3B2AACC60BFF216604B8F064C035FBA /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
 		C3F25D2345CC9686E5C1941944FE02CD /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72D0A5025D84D7118A024C308E1503E /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		C73537D593B71F8DD7F656F45EC3D0BE /* IndexPath+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IndexPath+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/IndexPath+Extension.swift"; sourceTree = "<group>"; };
 		C92A0606D2424F11A1FC19F5E8645AA0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
@@ -455,7 +457,7 @@
 		E21735DE0884D7CE1957E6EA790640FE /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/Timer+Extension.swift"; sourceTree = "<group>"; };
 		E25CFC25128351F94CB7E8B1A6ADB851 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
 		E29791F34566C32604D60CD125585D67 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
-		E3A571BC20C18E166DF6231952B216FA /* Pods_JKProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKProgressHUD_Tests.framework; path = "Pods-JKProgressHUD_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A571BC20C18E166DF6231952B216FA /* Pods_JKProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F1983E8FCCFB5CBC98EC579280F0AA /* AVAssetExportSession+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVAssetExportSession+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/AVAssetExportSession+Extension.swift"; sourceTree = "<group>"; };
 		E50A4D200C5C3E676E5D246F5869D688 /* ResourceBundle-JKSwiftExtension-JKSwiftExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-JKSwiftExtension-JKSwiftExtension-Info.plist"; sourceTree = "<group>"; };
 		E5CBF99C41EE8A9CEAED47DD4904420C /* CGFloat+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Extension.swift"; path = "JKSwiftExtension/Classes/JKSwiftExtesion/FoundationExtension/CGFloat+Extension.swift"; sourceTree = "<group>"; };
@@ -655,7 +657,6 @@
 				A6B5904A0104478F1DC0E6F16207CA10 /* Resources */,
 				0241A27D6CB52E99FA7C863C7C3B9CD5 /* Support Files */,
 			);
-			name = JKSwiftExtension;
 			path = JKSwiftExtension;
 			sourceTree = "<group>";
 		};
@@ -692,7 +693,6 @@
 				F11ADE729FD9C7D8B42E9457011C5652 /* MBProgressHUD.m */,
 				81E2A115691492DBF37D4B5E12ADDAC4 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -791,7 +791,6 @@
 				54500840438852BB36D72AC2F6799C40 /* UILayoutSupport+Extensions.swift */,
 				97AB51E1B25862640681B4315622CFB9 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -858,7 +857,6 @@
 				E25CFC25128351F94CB7E8B1A6ADB851 /* UIButton+Kingfisher.swift */,
 				428431D255A30BD3C81CC5B71E14A37C /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -900,6 +898,7 @@
 		CB75C41EB408CBD651A5F49690CA9A56 /* JKProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				841B468525C3B58800326D5C /* JKProgressHUD.h */,
 				842A918288D7ECF01FF08F1C6E237D6E /* JKProgressHUD.swift */,
 				D2CB0C472451AF559C9B7E3B1065956D /* JKProgressHUD+UIView.swift */,
 				EE0E2FBE6BA4AEB1D65A6D76BF620AD8 /* Pod */,
@@ -977,6 +976,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B468625C3B58800326D5C /* JKProgressHUD.h in Headers */,
 				6977D5B5E6A8BF0F6BCBA7ED17F5BD6C /* JKProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2055,8 +2055,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
