@@ -28,10 +28,7 @@ class ViewController: BaseViewController {
         self.navigationController?.navigationBar.barTintColor = .brown
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "跳转", style: .plain, target: self, action: #selector(click))
         headDataArray = ["一、使用详解：基本用法，普通提示框", "二、使用详解：带进度的提示框", "三、使用详解：对提示框进行操作：隐藏提示框", "四、使用详解：对提示框进行操作，添加点击手势", "五、修改默认样式", "六、自定义视图", "七、扩展 MBProgressHUD，封装常用方法"]
-        dataArray = [["显示最简单的“菊花”的提示", "显示“纯文字”的提示", "显示“纯文字标题 + 详情”的提示", "显示“菊花 + 文字”的提示", "显示“菊花 + 文字标题 + 详情”的提示"], ["使用水平进度条", "使用环形进度条", "使用饼状进度条"], ["隐藏提示框：立刻隐藏", "隐藏提示框：延迟隐藏", "隐藏提示框：通过 minShowTime 属性可以设置最短显示时间（默认为 0）。使用这个设置可以避免提示框显示后立即被隐藏", "隐藏提示框：通过 animationType 属性可以设置提示框消失动画，有如下三种可选值：.fade：逐渐透明消失（默认值）；.zoomOut：逐渐缩小并透明消失；.zoomIn：逐渐放大并透明消失；.zoom：逐渐缩小消失", "隐藏提示框：通过 removeFromSuperViewOnHide 属性，可以设置提示框隐藏的时候是否从父视图中移除（默认为 false）"], ["下面样例给提示框添加个点击手势。当点击提示框后，提示框自动消失。当然在实际应用中，我们还可以在点击响应中进行一些其它操作，比如取消当前的网络请求等等。"], ["设置遮罩的背景色：下面将提示框遮罩设置为黑色半透明（默认为透明的）", "设置毛玻璃效果的遮罩背景：可以看到遮罩下方的控件都会有模糊效果", "设置提示框背景色，下面将提示框的背景色改成透明的", "设置提示框圆角值", "设置文字的颜色和字体", "设置菊花颜色", "设置提示框偏移量，即提示框相对于父视图中心点的偏移，正值为向右下偏移，负值为向左上偏移", "设置提示框内边距", "设置提示框的最小尺寸", "设置正方形提示框"], ["下面样例在提示框中显示一个“❤️”的图标"], ["显示成功消息", "显示失败消息", "显示普通消息", "显示等待消息", "gif动画的刷新", "测试"]]
-        
-        let fractionCompleted = Float(String(format: "%.2f", 0.33333333))!
-        print("fractionCompleted= \(String(describing: fractionCompleted)), 百分比：\(String(format: "%.f", fractionCompleted * 100))")
+        dataArray = [["显示最简单的“菊花”的提示", "显示“纯文字”的提示", "显示“纯文字标题 + 详情”的提示", "显示“菊花 + 文字”的提示", "显示“菊花 + 文字标题 + 详情”的提示"], ["使用水平进度条", "使用环形进度条", "使用饼状进度条"], ["隐藏提示框：立刻隐藏", "隐藏提示框：延迟隐藏", "隐藏提示框：通过 minShowTime 属性可以设置最短显示时间（默认为 0）。使用这个设置可以避免提示框显示后立即被隐藏", "隐藏提示框：通过 animationType 属性可以设置提示框消失动画，有如下三种可选值：.fade：逐渐透明消失（默认值）；.zoomOut：逐渐缩小并透明消失；.zoomIn：逐渐放大并透明消失；.zoom：逐渐缩小消失", "隐藏提示框：通过 removeFromSuperViewOnHide 属性，可以设置提示框隐藏的时候是否从父视图中移除（默认为 false）"], ["下面样例给提示框添加个点击手势。当点击提示框后，提示框自动消失。当然在实际应用中，我们还可以在点击响应中进行一些其它操作，比如取消当前的网络请求等等。"], ["设置遮罩的背景色：下面将提示框遮罩设置为黑色半透明（默认为透明的）", "设置毛玻璃效果的遮罩背景：可以看到遮罩下方的控件都会有模糊效果", "设置提示框背景色，下面将提示框的背景色改成透明的", "设置提示框圆角值", "设置文字的颜色和字体", "设置菊花颜色", "设置提示框偏移量，即提示框相对于父视图中心点的偏移，正值为向右下偏移，负值为向左上偏移", "设置提示框内边距", "设置提示框的最小尺寸", "设置正方形提示框"], ["下面样例在提示框中显示一个“❤️”的图标"], ["显示成功消息", "显示失败消息", "显示普通消息，可添加图片", "显示等待消息", "gif动画的刷新"]]
     }
     
     @objc func click() {
@@ -46,19 +43,11 @@ class ViewController: BaseViewController {
  而普通消息提示和等待提示显示后不会自动取消，需要手动将其隐藏。
  */
 extension ViewController {
-    
-    // MARK: 7.6、测试
-    @objc func test76() {
-        self.view.showWait("等待啦")
-        JKAsyncs.asyncDelay(2) {
-        } _: {
-        }
-    }
 
     // MARK: 7.5、gif动画的刷新
     @objc func test75() {
         //显示等待消息
-        JKProgressHUD.showGifInfo("刷新中...")
+        JKProgressHUD.showGifInfo("刷新中...", gifImageName: "loading", gifImagesCount: 6)
         JKAsyncs.asyncDelay(2) {
             
         } _: {
@@ -78,7 +67,7 @@ extension ViewController {
 
     }
     
-    // MARK: 7.3、显示普通消息
+    // MARK: 7.3、显示普通消息，可添加图片
     @objc func test73() {
         //显示普通消息
         JKProgressHUD.showInfo("这是普通提示消息")
@@ -161,17 +150,15 @@ extension ViewController {
     @objc func test56() {
         
         //将菊花设置成橙色
-        UIActivityIndicatorView.appearance(whenContainedInInstancesOf: [MBProgressHUD.self]).color = .red
-        
+        // UIActivityIndicatorView.appearance(whenContainedInInstancesOf: [MBProgressHUD.self]).color = .red
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         hud.label.text = "请稍等"
         hud.detailsLabel.text = "具体要等多久我也不知道"
         hud.label.textColor = .orange //标题文字颜色
         hud.label.font = UIFont.systemFont(ofSize: 20) //标题文字字体
         hud.detailsLabel.textColor = .blue //详情文字颜色
+        hud.bezelView.style = .solidColor
         hud.detailsLabel.font = UIFont.systemFont(ofSize: 11) //详情文字字体
-        
-        
         hud.hide(animated: true, afterDelay: 2)  //2秒钟后自动隐藏
     }
     
@@ -198,10 +185,16 @@ extension ViewController {
     }
     
     // MARK: 5.3、设置提示框背景色，下面将提示框的背景色改成透明的
+    /**
+     提示：如果我们想要把四方形的提示框背景色去掉或者改为其他的颜色，我们做如下操作
+     hud.bezelView.color = UIColor.clear //将提示框背景改成透明
+     hud.bezelView.style = .solidColor
+     如果是blur模式，不管背影色设置成什么颜色，都会被加上半透明的效果，所以要先改其style
+     */
     @objc func test53() {
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
-        hud.label.text = "请稍等"
         hud.bezelView.color = UIColor.clear //将提示框背景改成透明
+        hud.bezelView.style = .solidColor
         
         hud.hide(animated: true, afterDelay: 2)  //2秒钟后自动隐藏
     }
@@ -437,6 +430,12 @@ extension ViewController {
     @objc func test11() {
         //初始化HUD窗口，并置于当前的View当中显示
         let progressHUD = MBProgressHUD.showAdded(to: self.view, animated: true)
+        /**
+         indeterminate：菊花
+         annularDeterminate 进度
+         customView 自定义
+         determinateHorizontalBar：水平进度
+         */
         JKAsyncs.asyncDelay(2) {
         } _: {
             progressHUD.hide(animated: true)

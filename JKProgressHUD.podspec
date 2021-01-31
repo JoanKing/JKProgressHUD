@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKProgressHUD'
-  s.version          = '0.1.5'
+  s.version          = '0.1.7'
   s.summary          = 'JKProgressHUD是对MBProgressHUD的扩展'
   s.description      = 'JKProgressHUD是一个针对扩展MBProgressHUD演示的一个使用用例'
 
