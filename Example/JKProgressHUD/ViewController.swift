@@ -47,11 +47,11 @@ extension ViewController {
     // MARK: 7.5、gif动画的刷新
     @objc func test75() {
         //显示等待消息
-        JKProgressHUD.showGifInfo("刷新中...", gifImageName: "loading", gifImagesCount: 6, animationDuration: 0.6)
+        JKProgressHUD.showGifInfo("刷新中...", gifImageName: "loading", gifImagesCount: 22, animationDuration: 2)
         JKAsyncs.asyncDelay(2) {
             
         } _: {
-            JKProgressHUD.dismiss()
+            JKProgressHUD.dismissProgressHUD()
         }
     }
     
@@ -62,7 +62,7 @@ extension ViewController {
         JKAsyncs.asyncDelay(2) {
             
         } _: {
-            JKProgressHUD.dismiss()
+            JKProgressHUD.dismissProgressHUD()
         }
 
     }
@@ -74,7 +74,7 @@ extension ViewController {
         JKAsyncs.asyncDelay(2) {
             
         } _: {
-            JKProgressHUD.dismiss()
+            JKProgressHUD.dismissProgressHUD()
         }
     }
     

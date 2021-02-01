@@ -24,22 +24,22 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .brown
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "跳转", style: .plain, target: self, action: #selector(click))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "取消刷新", style: .plain, target: self, action: #selector(click))
         self.view.addSubview(button)
         self.view.addSubview(button2)
     }
     
     @objc func click() {
-        button2.dismiss()
+        button2.dismissProgressHUD()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         button.showWait("等待啦")
-        button2.showGifInfo("刷新啦...", gifImageName: "loading", gifImagesCount: 6, animationDuration: 0.6)
+        button2.showGifInfo("刷新啦...", gifImageName: "loading", gifImagesCount: 22, animationDuration: 2)
         JKAsyncs.asyncDelay(2) {
         } _: {[weak self] in
             guard let weakSelf = self else { return }
-            weakSelf.button.dismiss()
+            weakSelf.button.dismissProgressHUD()
         }
     }
 

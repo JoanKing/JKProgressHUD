@@ -46,7 +46,7 @@ public extension JKProgressHUD {
      
     // MARK: 隐藏正在显示的视图
     /// 隐藏正在显示的视图
-    static func dismiss() {
+    static func dismissProgressHUD() {
         let view = viewToShow()
         MBProgressHUD.hide(for: view, animated: true)
     }

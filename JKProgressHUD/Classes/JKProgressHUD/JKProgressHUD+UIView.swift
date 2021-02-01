@@ -66,7 +66,7 @@ public extension UIView {
     
     // MARK: 隐藏正在显示的视图
     /// 隐藏正在显示的视图
-    func dismiss() {
+    func dismissProgressHUD() {
         // 1、不存在就进行移除
         guard let hud = progressHUD else {
             return
