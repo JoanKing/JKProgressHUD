@@ -9,6 +9,13 @@ import Foundation
 import MBProgressHUD
 public extension UIView {
     static var JKMBProgressHUD_key = "JKMBProgressHUD_key"
+    /// 是否正在展示提示框
+    var isShow: Bool {
+        guard progressHUD != nil else {
+            return false
+        }
+        return true
+    }
     /// 刷新对象
     var progressHUD: MBProgressHUD? {
         get {
@@ -78,10 +85,10 @@ public extension UIView {
     ///   - title: 普通消息内容
     ///   - gifImageName: 图片的名字，比如图片名字是：loading，gifImagesCount 是6，那么图片6张是：loading_1、loading_2、loading_3、loading_4、loading_5、loading_6
     ///   - gifImagesCount: 图片的数量
-    func showGifInfo(_ title: String, gifImageName: String, gifImagesCount: Int) {
+    func showGifInfo(_ title: String, gifImageName: String, gifImagesCount: Int, animationDuration: TimeInterval) {
         let hud = MBProgressHUD.showAdded(to: self, animated: true)
         hud.mode = .customView //模式设置为自定义视图
-        hud.customView = JKProgressHUD.gifCustomView(gifImageName: gifImageName, gifImagesCount: gifImagesCount)
+        hud.customView = JKProgressHUD.gifCustomView(gifImageName: gifImageName, gifImagesCount: gifImagesCount, animationDuration: animationDuration)
         hud.label.text = title
         hud.removeFromSuperViewOnHide = true
         
@@ -126,7 +133,7 @@ public extension UIView {
         }
         hud.label.text = title
         hud.removeFromSuperViewOnHide = true
-        //HUD窗口显示1秒后自动隐藏
+        // HUD窗口显示1秒后自动隐藏
         hud.hide(animated: true, afterDelay: 1)
     }
 }

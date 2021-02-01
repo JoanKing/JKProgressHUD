@@ -30,13 +30,12 @@ class TestViewController: UIViewController {
     }
     
     @objc func click() {
-
         button2.dismiss()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         button.showWait("等待啦")
-        button2.showGifInfo("刷新啦...", gifImageName: "loading", gifImagesCount: 6)
+        button2.showGifInfo("刷新啦...", gifImageName: "loading", gifImagesCount: 6, animationDuration: 0.6)
         JKAsyncs.asyncDelay(2) {
         } _: {[weak self] in
             guard let weakSelf = self else { return }

@@ -57,11 +57,11 @@ public extension JKProgressHUD {
     // MARK: 显示Gif刷新消息
     /// 显示Gif刷新消息
     /// - Parameter title: 普通消息内容
-    static func showGifInfo(_ title: String, gifImageName: String, gifImagesCount: Int) {
+    static func showGifInfo(_ title: String, gifImageName: String, gifImagesCount: Int, animationDuration: TimeInterval) {
         let view = viewToShow()
         let hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud.mode = .customView //模式设置为自定义视图
-        hud.customView = gifCustomView(gifImageName: gifImageName, gifImagesCount: gifImagesCount)
+        hud.customView = gifCustomView(gifImageName: gifImageName, gifImagesCount: gifImagesCount, animationDuration: animationDuration)
         hud.label.text = title
         hud.removeFromSuperViewOnHide = true
     }
@@ -125,7 +125,7 @@ extension JKProgressHUD {
         return window!
     }
     
-     static func gifCustomView(gifImageName: String, gifImagesCount: Int) -> UIView {
+     static func gifCustomView(gifImageName: String, gifImagesCount: Int, animationDuration: TimeInterval) -> UIView {
         
         guard let image = UIImage(named:"\(gifImageName)_1") else {
             return UIView()
@@ -135,7 +135,7 @@ extension JKProgressHUD {
         mainImageView.alpha = 1
         mainImageView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         mainImageView.animationImages = animationImages(gifImageName: gifImageName, gifImagesCount: gifImagesCount)
-        mainImageView.animationDuration = 0.6
+        mainImageView.animationDuration = animationDuration
         mainImageView.startAnimating()
         return mainImageView
     }
