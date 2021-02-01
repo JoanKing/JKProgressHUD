@@ -14,16 +14,17 @@
    
     extension ViewController {
     
-      var jk_isShowGifHUD: Bool {
-      return self.view.isShow
-    }
-    
-    func jk_showGifHUD() {
-        self.view.showGifInfo("", gifImageName: "loading", gifImagesCount: 22, animationDuration: 2)
-    }
+        var jk_isShowGifHUD: Bool {
+           return self.view.isShow
+        }
+      
+        func jk_showGifHUD() {
+           self.view.showGifInfo("", gifImageName: "loading", gifImagesCount: 22, animationDuration: 2)
+        }
 
-    func jk_hideGifHUD() {
-        self.view.dismissProgressHUD()
+        func jk_hideGifHUD() {
+           self.view.dismissProgressHUD()
+        }
     }
    - 2、JKProgressHUD 如果是正常的其他的提示语提示使用如下
      - 2.1、成功的提示
@@ -57,7 +58,6 @@
      - 3.5、视图的消失
            
            customView.dismissProgressHUD()
-}
 
 ## Author
 
