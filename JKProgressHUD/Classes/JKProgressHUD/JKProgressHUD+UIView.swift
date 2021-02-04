@@ -86,8 +86,13 @@ public extension UIView {
     ///   - gifImageName: 图片的名字，比如图片名字是：loading，gifImagesCount 是6，那么图片6张是：loading_1、loading_2、loading_3、loading_4、loading_5、loading_6
     ///   - gifImagesCount: 图片的数量
     func showGifInfo(_ title: String, gifImageName: String, gifImagesCount: Int, animationDuration: TimeInterval) {
+        // 防止添加多次
+        guard progressHUD == nil else {
+            return
+        }
         let hud = MBProgressHUD.showAdded(to: self, animated: true)
-        hud.mode = .customView //模式设置为自定义视图
+        // 模式设置为自定义视图
+        hud.mode = .customView
         hud.customView = JKProgressHUD.gifCustomView(gifImageName: gifImageName, gifImagesCount: gifImagesCount, animationDuration: animationDuration)
         hud.label.text = title
         hud.removeFromSuperViewOnHide = true
