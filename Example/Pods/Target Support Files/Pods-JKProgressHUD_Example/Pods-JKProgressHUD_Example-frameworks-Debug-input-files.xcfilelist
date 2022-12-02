@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/JKProgressHUD/JKProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/JKSwiftExtension/JKSwiftExtension.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

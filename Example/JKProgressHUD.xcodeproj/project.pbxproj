@@ -3,25 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43479478A48224BA373188E5 /* Pods_JKProgressHUD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880FE41988202908790670EC /* Pods_JKProgressHUD_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		841B466825C3B17900326D5C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B466725C3B17900326D5C /* BaseViewController.swift */; };
-		841B467025C3B1A400326D5C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B466F25C3B1A400326D5C /* TestViewController.swift */; };
-		84E96D9B25C7C02E00D76D5C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E96D9A25C7C02E00D76D5C /* UIViewController+Extension.swift */; };
+		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9F327F9FAA6B3F5ED579FA8D /* Pods_JKProgressHUD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AFE0850417BAE47A71E5A1 /* Pods_JKProgressHUD_Example.framework */; };
+		DF67FCBD550FA16CB2A26120 /* Pods_JKProgressHUD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A43349963C576F25E89330DB /* Pods_JKProgressHUD_Tests.framework */; };
+		E20B3CF0293A48D80054488E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B3CED293A48D70054488E /* UIViewController+Extension.swift */; };
+		E20B3CF1293A48D80054488E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B3CEE293A48D70054488E /* BaseViewController.swift */; };
+		E20B3CF2293A48D80054488E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B3CEF293A48D80054488E /* TestViewController.swift */; };
+		E20B3CF8293A4E260054488E /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20B3CF7293A4E250054488E /* BaseNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = JKProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		206F502E3772DCE3FCC37FF9 /* Pods_JKProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FCDF25BFEC64A1431C35EDF /* Pods-JKProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Example.debug.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		50D452C87F5791063273FC24 /* Pods-JKProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		21A4C1947AB61427F7F26233 /* Pods-JKProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Example.debug.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JKProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,18 +40,22 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* JKProgressHUD_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKProgressHUD_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		811AF4CC6F9F2B8CDA2200B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		816B3F37DEF4BF1E310E7A4E /* JKProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKProgressHUD.podspec; path = ../JKProgressHUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		841B466725C3B17900326D5C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		841B466F25C3B1A400326D5C /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		841B467325C3B1F500326D5C /* JKProgressHUD_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JKProgressHUD_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		84E96D9A25C7C02E00D76D5C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		880FE41988202908790670EC /* Pods_JKProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A9C3574F65E8614A963F9C3 /* Pods-JKProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Tests.release.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9BC052CC14767A263DE93B78 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DA07320B2AE25563CA9FE90E /* Pods-JKProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Example.release.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
+		64D1553D04789C1D5B6BCC25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		75E003529BD6A4B9CBB017C8 /* Pods-JKProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43349963C576F25E89330DB /* Pods_JKProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AFE0850417BAE47A71E5A1 /* Pods_JKProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCBF39646E814E5F7EE2440 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D3DA5459BAA7B87DC2487C7B /* Pods-JKProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Tests.release.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D93EED410F6429C28B1195A3 /* JKProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKProgressHUD.podspec; path = ../JKProgressHUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E20B3CED293A48D70054488E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E20B3CEE293A48D70054488E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E20B3CEF293A48D80054488E /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		E20B3CF3293A48EA0054488E /* JKProgressHUD_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JKProgressHUD_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		E20B3CF7293A4E250054488E /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		E9ACBDE38F9B59EE6549508E /* Pods-JKProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKProgressHUD_Example.release.xcconfig"; path = "Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,24 +63,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43479478A48224BA373188E5 /* Pods_JKProgressHUD_Example.framework in Frameworks */,
+				9F327F9FAA6B3F5ED579FA8D /* Pods_JKProgressHUD_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF67FCBD550FA16CB2A26120 /* Pods_JKProgressHUD_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01857E8CC4016F2A7DD21DF8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2FCDF25BFEC64A1431C35EDF /* Pods-JKProgressHUD_Example.debug.xcconfig */,
-				DA07320B2AE25563CA9FE90E /* Pods-JKProgressHUD_Example.release.xcconfig */,
-				50D452C87F5791063273FC24 /* Pods-JKProgressHUD_Tests.debug.xcconfig */,
-				8A9C3574F65E8614A963F9C3 /* Pods-JKProgressHUD_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +85,8 @@
 				607FACD21AFB9204008FA782 /* Example for JKProgressHUD */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				01857E8CC4016F2A7DD21DF8 /* Pods */,
-				E417CE1E9C6A0AE692A85390 /* Frameworks */,
+				D703C31C4650F1E14A5C7E1B /* Pods */,
+				986CD33910535E91C4769828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* JKProgressHUD_Example.app */,
+				607FACE51AFB9204008FA782 /* JKProgressHUD_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,13 +104,15 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				841B466F25C3B1A400326D5C /* TestViewController.swift */,
-				84E96D9A25C7C02E00D76D5C /* UIViewController+Extension.swift */,
+				E20B3CEE293A48D70054488E /* BaseViewController.swift */,
+				E20B3CEF293A48D80054488E /* TestViewController.swift */,
+				E20B3CED293A48D70054488E /* UIViewController+Extension.swift */,
+				E20B3CF7293A4E250054488E /* BaseNavigationViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				841B466725C3B17900326D5C /* BaseViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				E20B3CF3293A48EA0054488E /* JKProgressHUD_Example-Bridging-Header.h */,
 			);
 			name = "Example for JKProgressHUD";
 			path = JKProgressHUD;
@@ -107,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-				841B467325C3B1F500326D5C /* JKProgressHUD_Example-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,20 +146,31 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				816B3F37DEF4BF1E310E7A4E /* JKProgressHUD.podspec */,
-				9BC052CC14767A263DE93B78 /* README.md */,
-				811AF4CC6F9F2B8CDA2200B9 /* LICENSE */,
+				D93EED410F6429C28B1195A3 /* JKProgressHUD.podspec */,
+				64D1553D04789C1D5B6BCC25 /* README.md */,
+				BFCBF39646E814E5F7EE2440 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		E417CE1E9C6A0AE692A85390 /* Frameworks */ = {
+		986CD33910535E91C4769828 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				880FE41988202908790670EC /* Pods_JKProgressHUD_Example.framework */,
-				206F502E3772DCE3FCC37FF9 /* Pods_JKProgressHUD_Tests.framework */,
+				B8AFE0850417BAE47A71E5A1 /* Pods_JKProgressHUD_Example.framework */,
+				A43349963C576F25E89330DB /* Pods_JKProgressHUD_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D703C31C4650F1E14A5C7E1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21A4C1947AB61427F7F26233 /* Pods-JKProgressHUD_Example.debug.xcconfig */,
+				E9ACBDE38F9B59EE6549508E /* Pods-JKProgressHUD_Example.release.xcconfig */,
+				75E003529BD6A4B9CBB017C8 /* Pods-JKProgressHUD_Tests.debug.xcconfig */,
+				D3DA5459BAA7B87DC2487C7B /* Pods-JKProgressHUD_Tests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,11 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKProgressHUD_Example" */;
 			buildPhases = (
-				936B30FBAE8E781EEA3033F3 /* [CP] Check Pods Manifest.lock */,
+				76AEED6F9C979F5623102844 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				5D70064EB2DF66F08B149C94 /* [CP] Embed Pods Frameworks */,
+				4713C48AE5707CEE20C93D2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +194,26 @@
 			productName = JKProgressHUD;
 			productReference = 607FACD01AFB9204008FA782 /* JKProgressHUD_Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* JKProgressHUD_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKProgressHUD_Tests" */;
+			buildPhases = (
+				F36118DD44F730D7F42FB9BB /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+				207A436A650C858A4A83161A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = JKProgressHUD_Tests;
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* JKProgressHUD_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -182,13 +227,17 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = XXHJUP7YMQ;
-						LastSwiftMigration = 1230;
+						LastSwiftMigration = 1410;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "JKProgressHUD" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -202,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* JKProgressHUD_Example */,
+				607FACE41AFB9204008FA782 /* JKProgressHUD_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,36 +267,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D70064EB2DF66F08B149C94 /* [CP] Embed Pods Frameworks */ = {
+		207A436A650C858A4A83161A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JKProgressHUD/JKProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/JKSwiftExtension/JKSwiftExtension.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKSwiftExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Tests/Pods-JKProgressHUD_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4713C48AE5707CEE20C93D2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKProgressHUD_Example/Pods-JKProgressHUD_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		936B30FBAE8E781EEA3033F3 /* [CP] Check Pods Manifest.lock */ = {
+		76AEED6F9C979F5623102844 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,6 +333,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F36118DD44F730D7F42FB9BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JKProgressHUD_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -275,15 +362,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20B3CF2293A48D80054488E /* TestViewController.swift in Sources */,
+				E20B3CF0293A48D80054488E /* UIViewController+Extension.swift in Sources */,
+				E20B3CF1293A48D80054488E /* BaseViewController.swift in Sources */,
+				E20B3CF8293A4E260054488E /* BaseNavigationViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				841B467025C3B1A400326D5C /* TestViewController.swift in Sources */,
-				84E96D9B25C7C02E00D76D5C /* UIViewController+Extension.swift in Sources */,
-				841B466825C3B17900326D5C /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* JKProgressHUD_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -399,21 +503,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FCDF25BFEC64A1431C35EDF /* Pods-JKProgressHUD_Example.debug.xcconfig */;
+			baseConfigurationReference = 21A4C1947AB61427F7F26233 /* Pods-JKProgressHUD_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = XXHJUP7YMQ;
+				DEVELOPMENT_TEAM = Q24HFFF5V3;
 				INFOPLIST_FILE = JKProgressHUD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,20 +534,75 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA07320B2AE25563CA9FE90E /* Pods-JKProgressHUD_Example.release.xcconfig */;
+			baseConfigurationReference = E9ACBDE38F9B59EE6549508E /* Pods-JKProgressHUD_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = XXHJUP7YMQ;
+				DEVELOPMENT_TEAM = Q24HFFF5V3;
 				INFOPLIST_FILE = JKProgressHUD/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "JKProgressHUD/JKProgressHUD_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75E003529BD6A4B9CBB017C8 /* Pods-JKProgressHUD_Tests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q24HFFF5V3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKProgressHUD_Example.app/JKProgressHUD_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3DA5459BAA7B87DC2487C7B /* Pods-JKProgressHUD_Tests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q24HFFF5V3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKProgressHUD_Example.app/JKProgressHUD_Example";
 			};
 			name = Release;
 		};
@@ -460,6 +623,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JKProgressHUD_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

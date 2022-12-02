@@ -1,21 +1,25 @@
 PODS:
-  - JKProgressHUD (0.1.0):
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JKProgressHUD (0.2.1):
     - MBProgressHUD
-  - JKSwiftExtension (1.1.2):
-    - Kingfisher
-    - SnapKit
-  - Kingfisher (4.10.1)
+  - JKSwiftExtension (2.2.3)
   - MBProgressHUD (1.2.0)
-  - SnapKit (4.2.0)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
   - JKProgressHUD (from `../`)
   - JKSwiftExtension
+  - SnapKit
 
 SPEC REPOS:
   trunk:
+    - FBSnapshotTestCase
     - JKSwiftExtension
-    - Kingfisher
     - MBProgressHUD
     - SnapKit
 
@@ -24,12 +28,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKProgressHUD: af7554c92c9e9dce6cef2a9e6e48a167beaa0a7e
-  JKSwiftExtension: eb2b6202a98a8dffe77506789c22e0b28e57c217
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JKProgressHUD: 757611adbd15b9e70ff01e157b2f0e08cb8231c9
+  JKSwiftExtension: c8bcd34bd01ac371c84629249ed7528d82162838
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 3c12d5acbef816963d1d6490641a03436a463c2d
+PODFILE CHECKSUM: 6227518909ffdfd97a7e4476f1f461fc2d035f2d
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

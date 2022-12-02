@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "JKProgressHUD.h"
 
 FOUNDATION_EXPORT double JKProgressHUDVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKProgressHUDVersionString[];

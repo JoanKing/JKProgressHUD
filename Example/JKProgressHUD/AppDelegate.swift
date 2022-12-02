@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  JKProgressHUD
 //
-//  Created by JoanKing on 01/29/2021.
-//  Copyright (c) 2021 JoanKing. All rights reserved.
+//  Created by chongwang on 12/02/2022.
+//  Copyright (c) 2022 chongwang. All rights reserved.
 //
 
 import UIKit
@@ -13,10 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = BaseNavigationViewController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
         return true
     }
