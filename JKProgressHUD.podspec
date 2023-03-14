@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'MBProgressHUD'
+  s.dependency 'SnapKit', '~> 4.2.0'
 end
